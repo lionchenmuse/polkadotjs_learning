@@ -106,6 +106,7 @@ const onSomthingStored = async (api: ApiPromise) => {
 
 const main = async () => {
     const api = await connect();
+    console.log(api.libraryInfo);   // 输出：@polkadot/api v10.1.3
     // const minDeposit = await getConst(api);
     // const keyring = new Keyring({ type: 'sr25519' });
     // const alice = keyring.addFromUri('//Alice');
